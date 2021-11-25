@@ -90,6 +90,15 @@
 .googleButton:hover{
     box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.2), 0 8px 22px 0 rgba(0, 0, 0, 0.19);}
 
-
-
+.ticket-btn{
+        margin-top: 10px;
+        border-color: transparent;
+        border-radius: 2px;
+        box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        font-size: 16px;
+        color: rgb(255, 255, 255);
+        background-color:#00bfa6e7;
+        display: flex;
+        align-items: center;
+    }
 

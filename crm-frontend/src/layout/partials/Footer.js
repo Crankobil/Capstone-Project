@@ -1,7 +1,7 @@
 const Footer = () => {
     return (
-        <div className="text-center copy-right">
-            &copy; ANKS & CO. all rights reserved - 2021.
+        <div className="text-center text-muted copy-right">
+           <small>&copy; ANKS & CO. all rights reserved - 2021</small> 
         </div>
     )
 }
