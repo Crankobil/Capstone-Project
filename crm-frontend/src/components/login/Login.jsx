@@ -1,10 +1,9 @@
-import { Container, Row, Col, Form, Button } from "react-bootstrap";
+import { Row, Col, Form, Button } from "react-bootstrap";
 
 
 
 
-
-const Login = () => {
+export const Login = ({handleOnChange, handleOnSubmit, formSwitcher, email, password}) => {
  
   return (
     <div   className="formContainer ">
@@ -12,12 +11,14 @@ const Login = () => {
             <Col >
             <h1 className="formTitle">Client Login</h1>
             <hr />
-            <Form >
+            <Form autoComplete="off" onSubmit={handleOnSubmit}>
                 <Form.Group>
                     <Form.Label>Email Address</Form.Label>
                     <Form.Control
                     type="email"
                     name="email"
+                    value = {email}
+                    onChange= {handleOnChange}
                     placeholder="Enter email"
                     required
                     />
@@ -27,6 +28,8 @@ const Login = () => {
                     <Form.Control
                     type="password"
                     name="password"
+                    value = {password}
+                    onChange= {handleOnChange}
                     placeholder="Enter password"
                     required
                     />
@@ -37,11 +40,11 @@ const Login = () => {
         </Row>
         <Row >
             <Col className="mt-3">
-            <a href="#!">Forgotten Password?</a>
+            <a href="#!" onClick={() => formSwitcher('reset')}>Forgot Password?</a>
             </Col>
         </Row>
     </div>
   );
 };
 
-export default Login;
+
