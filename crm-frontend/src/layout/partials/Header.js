@@ -2,10 +2,10 @@ import { Nav, Navbar } from "react-bootstrap"
 import logo from "../../assets/img/IMG_White.JPG"
 const Header = () => {
     return (
-        <Navbar variant="light" expand="md">
+        <Navbar bg="dark" variant="dark" expand="md">
             <Navbar.Brand>
-                <img src={logo} alt="logo" width="80px"/>
-            </Navbar.Brand>
+                <img   src={logo} alt="logo" width="80px" height="80px" style={{'borderRadius':'50%'}}/>
+            </Navbar.Brand >
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
